@@ -4,7 +4,7 @@
 .. image:: https://codecov.io/gh/stanfordnqp/spins-b/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/stanfordnqp/spins-b
     
-THIS FORK: adding black-box optimization in Spins-B
+This fork: adding black-box optimization in Spins-B
 ===================================================
 Spins-B is probably the most well known code for photonics inverse design
 in the community. Therefore we  chose to do our work on gradient-free optimization inside it. The present fork is aimed at gathering branches which include gradient-free optimization.
@@ -19,15 +19,15 @@ step 4- by SLSQP, using a parametrization. Here the optimization is continuous
 (the parametrization is continuous) but the design is discrete (there are only two permittivities).
 
 We add one more step termed NG, at the end of 3:
-- Lengler's method (https://dl.acm.org/doi/10.1145/3321707.3321733)
+- Lengler's method (`paper <https://dl.acm.org/doi/10.1145/3321707.3321733>_`)
 - equipped with a smoothing operator 
 
-The smoothing operator is detailed here:
-(https://github.com/facebookresearch/nevergrad/blob/8403d6c9659f40fec2a3cf7f474b3d8610f0f2e4/nevergrad/optimization/optimizerlib.py#L388).
+The smoothing operator is detailed `here <
+https://github.com/facebookresearch/nevergrad/blob/8403d6c9659f40fec2a3cf7f474b3d8610f0f2e4/nevergrad/optimization/optimizerlib.py#L388>_`.
 
 We are *very* grateful to Spins-B for providing us with this great code, central for our experiments.
 
-For example https://github.com/teytaud/spins-b/tree/patch-1 contains code for running Lengler+smoothing directly in Spins-B for the Bend90 case.
+For example `this branch<https://github.com/teytaud/spins-b/tree/patch-1>_` contains code for running Lengler+smoothing directly in Spins-B for the Bend90 case.
 
 Our results
 ===========
@@ -36,8 +36,8 @@ NG alone (as opposed to 1+2+3+NG) outperforms numerically 1+2+3 in some cases, i
 
 Discussing with us
 ==================
-Our code uses Nevergrad (https://github.com/facebookresearch/nevergrad)
-We are intensive Nevergrad users and we are happy to chat in https://www.facebook.com/groups/nevergradusers/
+Our code uses `Nevergrad <https://github.com/facebookresearch/nevergrad>`_.
+We are intensive Nevergrad users and we are happy to chat in `the user group <https://www.facebook.com/groups/nevergradusers/>`_.
 
 
 SPINS-B
