@@ -19,15 +19,15 @@ step 4- by SLSQP, using a parametrization. Here the optimization is continuous
 (the parametrization is continuous) but the design is discrete (there are only two permittivities).
 
 We add one more step termed NG, at the end of 3:
-- Lengler's method (`paper <https://dl.acm.org/doi/10.1145/3321707.3321733>_`)
+- Lengler's method (`paper <https://dl.acm.org/doi/10.1145/3321707.3321733>`_)
 - equipped with a smoothing operator 
 
 The smoothing operator is detailed `here <
-https://github.com/facebookresearch/nevergrad/blob/8403d6c9659f40fec2a3cf7f474b3d8610f0f2e4/nevergrad/optimization/optimizerlib.py#L388>_`.
+https://github.com/facebookresearch/nevergrad/blob/8403d6c9659f40fec2a3cf7f474b3d8610f0f2e4/nevergrad/optimization/optimizerlib.py#L388>`_.
 
 We are *very* grateful to Spins-B for providing us with this great code, central for our experiments.
 
-For example `this branch<https://github.com/teytaud/spins-b/tree/patch-1>_` contains code for running Lengler+smoothing directly in Spins-B for the Bend90 case.
+For example `this branch <https://github.com/teytaud/spins-b/tree/patch-1>`_ contains code for running Lengler+smoothing directly in Spins-B for the Bend90 case.
 
 Our results
 ===========
